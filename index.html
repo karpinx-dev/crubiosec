@@ -1,42 +1,85 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Cristobal Rubio | Cybersecurity Specialist</title>
-<meta name="description" content="Cristobal Rubio - Cybersecurity Specialist. Pentester, SOC Analyst, Consultant. Wiesbaden / Hessen.">
-<style>
-  :root{--bg:#0b1020;--card:#121a33;--accent:#00e0a4;--text:#e6eefc;--muted:#8aa0c7}
-  *{box-sizing:border-box;margin:0;padding:0}
-  body{font-family:'Segoe UI',system-ui,sans-serif;background:linear-gradient(135deg,#0b1020,#0d1430);color:var(--text);line-height:1.6;min-height:100vh}
-  .container{max-width:1000px;margin:0 auto;padding:40px 20px}
-  header{text-align:center;padding:60px 20px 40px}
-  header h1{font-size:2.8rem;background:linear-gradient(90deg,var(--accent),#4dd0e1);-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:10px}
-  header .role{color:var(--muted);font-size:1.2rem;margin-bottom:20px}
-  .cta{display:inline-block;margin:10px;padding:12px 28px;background:var(--accent);color:#0b1020;text-decoration:none;border-radius:8px;font-weight:600}
-  .cta.secondary{background:transparent;color:var(--accent);border:2px solid var(--accent)}
-  section{background:var(--card);border-radius:12px;padding:30px;margin:20px 0;box-shadow:0 4px 20px rgba(0,0,0,.3)}
-  h2{color:var(--accent);margin-bottom:15px;font-size:1.5rem}
-  ul{list-style:none;padding-left:0}
-  ul li{padding:8px 0;padding-left:24px;position:relative}
-  ul li::before{content:"▸";position:absolute;left:0;color:var(--accent)}
-  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:15px}
-  .tag{display:inline-block;background:rgba(0,224,164,.12);color:var(--accent);padding:4px 10px;border-radius:6px;margin:3px;font-size:.85rem}
-  footer{text-align:center;color:var(--muted);padding:30px 20px;font-size:.9rem}
-  a{color:var(--accent)}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cristobal Rubio | Cybersecurity Specialist</title>
+  <meta name="description" content="Cristobal Rubio - Cybersecurity Specialist. Pentester, SOC Analyst, Consultant. Wiesbaden / Hessen.">
+  <meta name="author" content="Cristobal Rubio">
+  <meta name="keywords" content="Cybersecurity, Pentester, SOC Analyst, Incident Response, Network Security, Wiesbaden, Hessen">
+  <link rel="canonical" href="https://crubiosec.dev/">
+  <meta name="theme-color" content="#0b1020">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛡️</text></svg>">
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Cristobal Rubio | Cybersecurity Specialist">
+  <meta property="og:description" content="Cybersecurity Specialist - Pentester, SOC Analyst, Consultant. Wiesbaden / Hessen.">
+  <meta property="og:url" content="https://crubiosec.dev/">
+  <meta property="og:site_name" content="crubiosec.dev">
+  <meta property="og:locale" content="de_DE">
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Cristobal Rubio | Cybersecurity Specialist">
+  <meta name="twitter:description" content="Cybersecurity Specialist - Pentester, SOC Analyst, Consultant. Wiesbaden / Hessen.">
+  <!-- JSON-LD Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Cristobal Rubio",
+    "jobTitle": "Cybersecurity Specialist",
+    "url": "https://crubiosec.dev",
+    "email": "c.rubiodelorme@hotmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Wiesbaden",
+      "addressRegion": "Hessen",
+      "addressCountry": "DE"
+    },
+    "sameAs": [
+      "https://linkedin.com/in/cristobal-rubio-392a45191"
+    ],
+    "knowsAbout": ["Cybersecurity","Penetration Testing","SOC","Incident Response","Network Security","IAM","Compliance"]
+  }
+  </script>
+  <style>
+    :root{--bg:#0b1020;--card:#121a33;--accent:#00e0a4;--text:#e6eefc;--muted:#8aa0c7}
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{font-family:'Segoe UI',system-ui,sans-serif;background:linear-gradient(135deg,#0b1020,#0d1430);color:var(--text);line-height:1.6;min-height:100vh}
+    .container{max-width:1000px;margin:0 auto;padding:40px 20px}
+    header{text-align:center;padding:60px 20px 40px}
+    header h1{font-size:2.8rem;background:linear-gradient(90deg,var(--accent),#4dd0e1);-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:10px}
+    header .role{color:var(--muted);font-size:1.2rem;margin-bottom:20px}
+    .cta{display:inline-block;margin:10px;padding:12px 28px;background:var(--accent);color:#0b1020;text-decoration:none;border-radius:8px;font-weight:600;transition:opacity .2s}
+    .cta:hover{opacity:.85}
+    .cta.secondary{background:transparent;color:var(--accent);border:2px solid var(--accent)}
+    .cta.secondary:hover{background:var(--accent);color:#0b1020}
+    section{background:var(--card);border-radius:12px;padding:30px;margin:20px 0;box-shadow:0 4px 20px rgba(0,0,0,.3)}
+    h2{color:var(--accent);margin-bottom:15px;font-size:1.5rem}
+    ul{list-style:none;padding-left:0}
+    ul li{padding:8px 0;padding-left:24px;position:relative}
+    ul li::before{content:"▸";position:absolute;left:0;color:var(--accent)}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:15px}
+    .tag{display:inline-block;background:rgba(0,224,164,.12);color:var(--accent);padding:4px 10px;border-radius:6px;margin:3px;font-size:.85rem}
+    footer{text-align:center;color:var(--muted);padding:30px 20px;font-size:.9rem}
+    a{color:var(--accent)}
+    a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+  </style>
 </head>
 <body>
-<div class="container">
+<div class="container" role="document">
   <header>
     <h1>Cristobal Rubio</h1>
     <p class="role">Cybersecurity Specialist | Pentester | SOC Analyst</p>
-    <p style="color:var(--muted)">Wiesbaden, Hessen - Deutschland</p>
-    <div style="margin-top:24px">
-      <a class="cta" href="CV_Rubio_Sec-2026.pdf" download>Lebenslauf (PDF)</a>
-      <a class="cta secondary" href="mailto:c.rubiodelorme@hotmail.com">Kontakt</a>
-    </div>
+    <p style="color:var(--muted)">Wiesbaden, Hessen – Deutschland</p>
+    <nav style="margin-top:24px" aria-label="Hauptnavigation">
+      <a class="cta" href="CV_Rubio_Sec-2026.pdf" download aria-label="Lebenslauf als PDF herunterladen">Lebenslauf (PDF)</a>
+      <a class="cta secondary" href="mailto:c.rubiodelorme@hotmail.com" aria-label="E-Mail senden">Kontakt</a>
+      <a class="cta secondary" href="https://linkedin.com/in/cristobal-rubio-392a45191" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn-Profil besuchen">LinkedIn</a>
+    </nav>
   </header>
+  <main>
   <section>
     <h2>Profil</h2>
     <p>Ingenieur Elektrotechnik mit MBA und ueber 15 Jahren internationaler Erfahrung in Projektmanagement, Risikomanagement und Compliance. Derzeit in Vollzeit-Weiterbildung zum Cybersecurity Specialist (MindRefined GmbH) mit Spezialisierung auf Network Security, Blue-Team-Operations (SIEM, SOC, Incident Response), IAM, Penetration Testing und GRC.</p>
@@ -77,20 +120,21 @@
   <section>
     <h2>Sprachen</h2>
     <ul>
-      <li>Spanisch - Muttersprache</li>
-      <li>Deutsch - C1</li>
-      <li>Englisch - fliessend</li>
-      <li>Franzoesisch - fliessend</li>
-      <li>Italienisch - gut</li>
+      <li>Spanisch – Muttersprache</li>
+      <li>Deutsch – C1</li>
+      <li>Englisch – fliessend</li>
+      <li>Franzoesisch – fliessend</li>
+      <li>Italienisch – gut</li>
     </ul>
   </section>
   <section id="kontakt">
     <h2>Kontakt</h2>
     <p>E-Mail: <a href="mailto:c.rubiodelorme@hotmail.com">c.rubiodelorme@hotmail.com</a></p>
-    <p>LinkedIn: <a href="https://linkedin.com/in/cristobal-rubio-392a45191" target="_blank" rel="noopener">cristobal-rubio-392a45191</a></p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/cristobal-rubio-392a45191" target="_blank" rel="noopener noreferrer">cristobal-rubio-392a45191</a></p>
     <p>Standort: Wiesbaden / Hessen, Deutschland</p>
   </section>
-  <footer>(c) 2026 Cristobal Rubio - crubiosec.dev</footer>
+  </main>
+  <footer role="contentinfo">&copy; 2026 Cristobal Rubio – crubiosec.dev</footer>
 </div>
 </body>
 </html>
